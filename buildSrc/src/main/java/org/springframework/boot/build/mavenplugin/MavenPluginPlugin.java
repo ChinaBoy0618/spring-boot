@@ -96,7 +96,7 @@ import org.springframework.util.Assert;
 
 /**
  * Plugin for building Spring Boot's Maven Plugin.
- *
+ * 用于构建 Spring Boot 的 Maven 插件的插件。
  * @author Andy Wilkinson
  * @author Phillip Webb
  */

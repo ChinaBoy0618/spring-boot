@@ -62,7 +62,12 @@ import org.springframework.boot.build.context.properties.ConfigurationProperties
  * file.
  * </ul>
  * </ul>
- *
+ * 用于定义自动配置的项目的插件。应用时，插件会应用 DeployedPlugin。此外，当应用 JavaPlugin 时：
+ * 应用 ConfigurationPropertiesPlugin。
+ * 添加对自动配置注释处理器的依赖项。
+ * 定义一个生成描述自动配置的元数据的任务。元数据作为 autoConfigurationMetadata 配置中的工件提供。
+ * 对正在应用的 ArchitecturePlugin 做出反应，并且：
+ * 向 checkArchitectureMain 任务添加一条规则，以验证 AutoConfiguration.imports 文件中是否列出了所有 AutoConfiguration 类。
  * @author Andy Wilkinson
  */
 public class AutoConfigurationPlugin implements Plugin<Project> {

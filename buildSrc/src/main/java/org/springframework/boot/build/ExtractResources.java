@@ -39,7 +39,7 @@ import org.springframework.util.PropertyPlaceholderHelper;
 
 /**
  * {@link Task} to extract resources from the classpath and write them to disk.
- *
+ * 从类路径中提取资源并将其写入磁盘的任务。
  * @author Andy Wilkinson
  */
 public class ExtractResources extends DefaultTask {

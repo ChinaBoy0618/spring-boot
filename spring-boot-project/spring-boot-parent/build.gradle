@@ -103,13 +103,13 @@ bom {
 			]
 		}
 	}
-	library("Maven Plugin Tools", "3.6.0") {
-		group("org.apache.maven.plugin-tools") {
-			modules = [
-				"maven-plugin-annotations"
-			]
-		}
-	}
+//	library("Maven Plugin Tools", "3.6.0") {
+//		group("org.apache.maven.plugin-tools") {
+//			modules = [
+//				"maven-plugin-annotations"
+//			]
+//		}
+//	}
 	library("Maven Resolver", "1.9.14") {
 		group("org.apache.maven.resolver") {
 			modules = [

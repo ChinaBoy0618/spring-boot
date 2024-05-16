@@ -45,7 +45,7 @@ import org.gradle.api.tasks.TaskAction;
 
 /**
  * A {@link Task} for checking the classpath for unnecessary exclusions.
- *
+ * 检查类路径是否存在不必要的排除的任务。
  * @author Andy Wilkinson
  */
 public class CheckClasspathForUnnecessaryExclusions extends DefaultTask {

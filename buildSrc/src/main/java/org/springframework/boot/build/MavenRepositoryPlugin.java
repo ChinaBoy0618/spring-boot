@@ -37,6 +37,10 @@ import org.gradle.api.publish.maven.plugins.MavenPublishPlugin;
  * A plugin to make a project's {@code deployment} publication available as a Maven
  * repository. The repository can be consumed by depending upon the project using the
  * {@code mavenRepository} configuration.
+ * <br/>
+ * 一个插件，使项目的{@code deployment}发布可作为Maven使用
+ * 存储库。可以根据项目使用该存储库
+ * {@code mavenRepository} 配置。
  *
  * @author Andy Wilkinson
  */

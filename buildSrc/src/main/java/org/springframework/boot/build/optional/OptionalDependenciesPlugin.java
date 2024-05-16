@@ -28,7 +28,7 @@ import org.gradle.api.tasks.SourceSetContainer;
  * {@code optional} configuration. The {@code optional} configuration is part of the
  * project's compile and runtime classpaths but does not affect the classpath of dependent
  * projects.
- *
+ * 添加对 Maven 样式可选依赖项的支持的插件。创建新的可选配置。可选配置是项目的编译和运行时类路径的一部分，但不会影响依赖项目的类路径。
  * @author Andy Wilkinson
  */
 public class OptionalDependenciesPlugin implements Plugin<Project> {

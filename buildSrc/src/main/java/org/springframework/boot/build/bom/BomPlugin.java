@@ -44,7 +44,7 @@ import org.springframework.boot.build.bom.bomr.UpgradeBom;
  * {@link Plugin} for defining a bom. Dependencies are added as constraints in the
  * {@code api} configuration. Imported boms are added as enforced platforms in the
  * {@code api} configuration.
- *
+ * 用于定义 bom 的 lugin。依赖项作为约束添加到 api 配置中。导入的 bom 将作为强制平台添加到 api 配置中。
  * @author Andy Wilkinson
  */
 public class BomPlugin implements Plugin<Project> {

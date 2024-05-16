@@ -29,7 +29,7 @@ import org.gradle.jvm.toolchain.JavaToolchainSpec;
 
 /**
  * {@link Plugin} for customizing Gradle's toolchain support.
- *
+ * 用于自定义 Gradle 工具链支持的插件
  * @author Christoph Dreis
  */
 public class ToolchainPlugin implements Plugin<Project> {

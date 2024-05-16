@@ -57,6 +57,19 @@ import org.springframework.util.StringUtils;
  * <li>{@code asciidoctorExtensions} is added to the task's configurations.
  * </ul>
  * </ul>
+ * 在存在 AsciidoctorJPlugin 的情况下应用的约定。应用插件时：
+ * 所有警告都是致命的。
+ * AsciidoctorJ版本升级至2.4.3。
+ * 创建了 asciidoctorExtensions 配置。
+ * 对于每个 AsciidoctorTask（仅限 HTML）：
+ * 创建一个任务以将文档资源同步到其输出目录。
+ * doctype 选项已配置。
+ * 后端已配置。
+ * 对于每个 AbstractAsciidoctorTask（HTML 和 PDF）：
+ * 属性配置为启用对缺少属性、GitHub 标签、当前版本的 Artifactory 存储库等的引用的警告。
+ * baseDirFollowsSourceDir() 已启用。
+ * asciidoctorExtensions 已添加到任务的配置中。
+ *
  *
  * @author Andy Wilkinson
  * @author Scott Frederick

@@ -27,7 +27,7 @@ import org.gradle.api.tasks.bundling.Jar;
 
 /**
  * A plugin applied to a project that should be deployed.
- *
+ * 应用于应部署的项目的插件。
  * @author Andy Wilkinson
  */
 public class DeployedPlugin implements Plugin<Project> {

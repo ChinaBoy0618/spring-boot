@@ -28,6 +28,9 @@ import org.gradle.api.tasks.TaskAction;
 /**
  * Tasks for syncing the source code of a Spring Boot application, filtering its
  * {@code build.gradle} to set the version of its {@code org.springframework.boot} plugin.
+ * <br/>
+ * 同步 Spring Boot 应用程序源代码、过滤其源代码的任务
+ * {@code build.gradle} 设置其 {@code org.springframework.boot} 插件的版本。
  *
  * @author Andy Wilkinson
  */

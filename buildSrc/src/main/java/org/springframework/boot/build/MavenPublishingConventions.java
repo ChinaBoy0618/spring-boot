@@ -51,7 +51,22 @@ import org.gradle.api.publish.maven.plugins.MavenPublishPlugin;
  * resolved versions.
  * </ul>
  * </ul>
+ * 在存在 {@link MavenPublishPlugin} 的情况下应用的约定。什么时候
+ * 应用插件：
  *
+ * <ul>
+ * <li>如果已设置 {@code deploymentRepository} 属性，则
+ * {@link MavenArtifactRepository Maven 工件存储库} 配置为发布到
+ * 它。
+ * <li>所有{@link MavenPublication Maven出版物}的pom都经过定制以满足
+ * Maven Central 的要求。
+ * <li>如果还应用了 {@link JavaPlugin Java 插件}：
+ * <ul>
+ * <li>已启用 Javadoc 和源 jar 的创建。
+ * <li>发布元数据（poms 和 Gradle 模块元数据）配置为使用
+ * 已解决的版本。
+ * </ul>
+ * </ul>
  * @author Andy Wilkinson
  * @author Christoph Dreis
  * @author Mike Smithson

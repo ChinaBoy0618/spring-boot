@@ -32,7 +32,7 @@ import org.springframework.util.StringUtils;
 
 /**
  * {@link Plugin} for verifying a project's architecture.
- *
+ * 用于验证项目架构的插件。
  * @author Andy Wilkinson
  */
 public class ArchitecturePlugin implements Plugin<Project> {

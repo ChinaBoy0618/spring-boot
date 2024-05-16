@@ -38,7 +38,20 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile;
  * </ul>
  *
  * <p/>
+ * 在存在 {@code org.jetbrains.kotlin.jvm} 的情况下应用的约定
+ * 插入。应用插件时：
  *
+ * <ul>
+ * <li>{@link KotlinCompile} 任务配置为：
+ * <ul>
+ * <li>使用 {@code apiVersion} 和 {@code languageVersion} 1.3。
+ * <li>使用{@code jvmTarget} 1.8。
+ * <li>将所有警告视为错误
+ * <li>抑制版本警告
+ * </ul>
+ * </ul>
+ *
+ * <p/>
  * @author Andy Wilkinson
  */
 class KotlinConventions {

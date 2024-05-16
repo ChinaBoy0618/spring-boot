@@ -45,7 +45,7 @@ import org.gradle.internal.jvm.Jvm;
 /**
  * {@link Task} to run an application for the purpose of capturing its output for
  * inclusion in the reference documentation.
- *
+ * 运行应用程序以捕获其输出以包含在参考文档中的任务。
  * @author Andy Wilkinson
  */
 public class ApplicationRunner extends DefaultTask {

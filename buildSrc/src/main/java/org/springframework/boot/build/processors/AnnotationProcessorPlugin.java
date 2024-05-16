@@ -25,7 +25,7 @@ import org.gradle.api.tasks.bundling.Jar;
 
 /**
  * A {@link Plugin} for an annotation processor project.
- *
+ * 用于注释处理器项目的插件
  * @author Christoph Dreis
  */
 public class AnnotationProcessorPlugin implements Plugin<Project> {

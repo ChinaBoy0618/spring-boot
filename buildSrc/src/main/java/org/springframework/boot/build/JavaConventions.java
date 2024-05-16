@@ -98,7 +98,48 @@ import org.springframework.util.StringUtils;
  * </ul>
  *
  * <p/>
+ 在存在 {@link JavaBasePlugin} 的情况下应用的约定。当。。。的时候
+ * 应用插件：
  *
+ * <ul>
+ * <li>该项目配置的源和目标兼容性为 1.8
+ * <li>{@link SpringJavaFormatPlugin Spring Java 格式}，{@link CheckstylePlugin
+ * Checkstyle}、{@link TestFailuresPlugin 测试失败}和{@link ArchitecturePlugin
+ * Architecture}插件被应用
+ * <li>{@link Test} 任务已配置：
+ * <ul>
+ * <li>使用 JUnit 平台
+ * <li>最大堆为1024M
+ * <li>在任何 Checkstyle 和格式检查任务之后运行
+ * <li>在 CI 上运行时启用最多 3 次重试
+ * <li>当值达到时使用预测测试选择
+ * {@code ENABLE_PREDICTIVE_TEST_SELECTION} 环境变量为 {@code true}
+ * </ul>
+ * <li>{@code testRuntimeOnly} 依赖项
+ * {@code org.junit.platform:junit-platform-launcher} 添加到项目中
+ * 应用了{@link JavaPlugin}
+ * <li>{@link JavaCompile}、{@link Javadoc} 和 {@link Format} 任务配置为
+ * 使用UTF-8编码
+ * <li>{@link JavaCompile} 任务配置为使用 {@code -parameters}。
+ * <li>使用 Java 8 构建时，{@link JavaCompile} 任务也配置为：
+ * <ul>
+ * <li>将警告视为错误
+ * <li>启用{@code unchecked}、{@code deprecation}、{@code rawtypes}和{@code varags}
+ * 警告
+ * </ul>
+ * <li>{@link Jar} 任务配置为生成带有 LICENSE.txt 和 NOTICE.txt 的 jar
+ * 文件和以下清单条目：
+ * <ul>
+ * <li>{@code 自动模块名称}
+ * <li>{@code Build-Jdk-Spec}
+ * <li>{@code 构建者}
+ * <li>{@code 实现标题}
+ * <li>{@code 实现版本}
+ * </ul>
+ * <li>{@code spring-boot-parent} 用于依赖管理</li>
+ * </ul>
+ *
+ * <p/>
  * @author Andy Wilkinson
  * @author Christoph Dreis
  * @author Mike Smithson

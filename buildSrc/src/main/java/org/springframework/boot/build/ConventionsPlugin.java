@@ -34,7 +34,8 @@ import org.gradle.api.publish.maven.plugins.MavenPublishPlugin;
  *
  * When the {@link AsciidoctorJPlugin} is applied, the conventions in
  * {@link AsciidoctorConventions} are applied.
- *
+ * 用于将约定应用于属于 Spring Boot 构建一部分的项目的插件。应用约定来响应所应用的各种插件。应用 JavaBasePlugin 时，将应用 JavaConventions 中的约定。
+ * 应用 MavenPublishPlugin 时，将应用 MavenPublishingConventions 中的约定。应用 AsciidoctorJPlugin 时，将应用 AsciidoctorConventions 中的约定。
  * @author Andy Wilkinson
  * @author Christoph Dreis
  * @author Mike Smithson
